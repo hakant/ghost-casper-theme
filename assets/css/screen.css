@@ -1825,6 +1825,7 @@ Usage (In Ghost editor):
     width: 100px;
     height: 100px;
     box-shadow: rgba(255,255,255,0.1) 0 0 0 6px;
+    margin-left: 65px;
 }
 
 .site-header-content .author-bio {
