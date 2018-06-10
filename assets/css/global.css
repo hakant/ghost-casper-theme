@@ -295,6 +295,10 @@ body {
     -moz-font-feature-settings: "liga" on;
 }
 
+section.post-full-content {
+    font-family: "Alegreya", Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
 ::selection {
     text-shadow: none;
     background: color(var(--blue) lightness(+30%));
