@@ -366,7 +366,17 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
         padding-left: 4vw;
     }
     .site-nav-right {
+        padding-right: 4vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .site-header.outer .inner .nav {
         display: none;
+    }
+    
+    .home-template .site-header.outer .inner .nav {
+        display: flex;
     }
 }
 
@@ -439,6 +449,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
 .post-header-tag {
     margin-right: 5px;
+    white-space: nowrap;
 }
 
 .post-card-tags {
@@ -680,10 +691,12 @@ The first (most recent) post in the list is styled to be bigger than the others 
     font-size: 1.4rem;
     font-weight: 600;
     text-transform: uppercase;
+    flex-wrap: wrap;
 }
 
 .post-full-meta-date {
     color: var(--blue);
+    white-space: nowrap;
 }
 
 .post-full-title {
@@ -702,6 +715,10 @@ The first (most recent) post in the list is styled to be bigger than the others 
     background: var(--lightgrey) center center;
     background-size: cover;
     border-radius: 5px;
+}
+
+.gist {
+    width: 100%;
 }
 
 @media (max-width: 1170px) {
@@ -1793,7 +1810,8 @@ Usage (In Ghost editor):
         font-size: 1.5rem;
     }
     .floating-header-share-tw,
-    .floating-header-share-fb {
+    .floating-header-share-fb,
+    .floating-header-share-li {
         width: 40px;
         height: 40px;
         line-height: 38px;
@@ -1831,6 +1849,12 @@ Usage (In Ghost editor):
     height: 100px;
     box-shadow: rgba(255,255,255,0.1) 0 0 0 6px;
     margin-left: 65px;
+}
+
+@media (max-width: 500px) {
+    .site-header-content .author-profile-image {
+        margin-left: 45px;
+    }
 }
 
 .site-header-content .author-bio {
